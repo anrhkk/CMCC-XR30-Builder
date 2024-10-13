@@ -108,15 +108,15 @@ config_package_del luci-app-ssr-plus_INCLUDE_ShadowsocksR_Rust_Server
 ## Web Terminal
 config_package_add luci-app-ttyd
 ## IP-Mac Binding
-config_package_add luci-app-arpbind
+# config_package_add luci-app-arpbind
 ## Wake on Lan
 config_package_add luci-app-wol
 ## QR Code Generator
-config_package_add qrencode
+# config_package_add qrencode
 ## Fish
-config_package_add fish
+# config_package_add fish
 ## Temporarily disable USB3.0
-config_package_add luci-app-usb3disable
+# config_package_add luci-app-usb3disable
 ## USB
 config_package_add kmod-usb-net-huawei-cdc-ncm
 config_package_add kmod-usb-net-ipheth
@@ -133,8 +133,8 @@ config_package_add kmod-tcp-bbr
 ## coremark cpu 跑分
 config_package_add coremark
 ## autocore + lm-sensors-detect： cpu 频率、温度
-config_package_add autocore
-config_package_add lm-sensors-detect
+# config_package_add autocore
+# config_package_add lm-sensors-detect
 ## autoreboot
 config_package_add luci-app-autoreboot
 ## 多拨
@@ -146,18 +146,18 @@ config_package_add luci-app-mwan3
 ## mosdns
 # config_package_add luci-app-mosdns
 ## curl
-config_package_add curl
+# config_package_add curl
 ## socat
-config_package_add socat
+# config_package_add socat
 ## disk
-config_package_add gdisk
-config_package_add sgdisk
+# config_package_add gdisk
+# config_package_add sgdisk
 ## Vim-Full
-config_package_add vim-full
+# config_package_add vim-full
 
 # MentoHust
-git clone https://github.com/sbwml/luci-app-mentohust package/mentohust
-config_package_add luci-app-mentohust
+# git clone https://github.com/sbwml/luci-app-mentohust package/mentohust
+# config_package_add luci-app-mentohust
 
 # Third-party packages
 mkdir -p package/custom
@@ -169,10 +169,10 @@ rm -rf feeds/packages/lang/golang
 mv package/custom/golang feeds/packages/lang/
 
 ## Passwall
-config_package_add luci-app-passwall2
-config_package_add iptables-mod-socket
-config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
-config_package_add luci-app-passwall2_INCLUDE_Hysteria
+# config_package_add luci-app-passwall2
+# config_package_add iptables-mod-socket
+# config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
+# config_package_add luci-app-passwall2_INCLUDE_Hysteria
 config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
 config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
 config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
@@ -196,12 +196,12 @@ rm -r package/custom/shadowsocks-rust
 rm -r package/custom/simple-obfs
 
 ## 定时任务。重启、关机、重启网络、释放内存、系统清理、网络共享、关闭网络、自动检测断网重连、MWAN3负载均衡检测重连、自定义脚本等10多个功能
-config_package_add luci-app-autotimeset
-config_package_add luci-lib-ipkg
+# config_package_add luci-app-autotimeset
+# config_package_add luci-lib-ipkg
 
 ## byobu, tmux
-config_package_add byobu
-config_package_add tmux
+# config_package_add byobu
+# config_package_add tmux
 
 # ## Frp Latest version patch
 
