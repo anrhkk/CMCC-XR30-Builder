@@ -104,7 +104,11 @@ config_package_del luci-theme-bootstrap-mod
 config_package_del luci-app-ssr-plus_INCLUDE_ShadowsocksR_Rust_Client
 config_package_del luci-app-ssr-plus_INCLUDE_ShadowsocksR_Rust_Server
 # Add custom packages
-
+config_package_add luci-app-diskman
+config_package_add luci-app-qbittorrent
+config_package_add luci-app-alist
+config_package_add luci-app-ksmbd
+config_package_add luci-app-accesscontrol
 ## Web Terminal
 config_package_add luci-app-ttyd
 ## IP-Mac Binding
